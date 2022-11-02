@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type='text/css' href="{{url_for('static', filename='style.css')}}" />
+    <title>Registration page</title>
+  </head>
+  <body>
+    <form action="http://localhost:3050/login" method="post">
+      <div class="container">
+        <h1>Registration page</h1>
+        <hr />
+
+        <label for="uname"><b>Username:</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required /><br><br><br>
+
+        <label for="email"><b>Email:</b></label>
+        <input
+          type="text"
+          placeholder="Enter Email"
+          name="email"
+          id="email"
+          required
+        /><br><br><br>
+
+        <label for="phone"><b>Enter your phone number:</b></label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Enter your phoneNo"
+        /><br><br><br>
+
+        <button type="submit" class="registerbtn">Register</button>
+      </div>
+    </form>
+  </body>
+</html>
