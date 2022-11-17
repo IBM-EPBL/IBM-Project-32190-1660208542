@@ -9,6 +9,6 @@ def mailtest_request(to_email):
     try:
         mail = Mail(from_email, to_email, subject, content)
         response = sg.client.mail.send.post(request_body=mail.get())
-        print("Mail send Successfully !")
+        print(" Mail send Successfully ! ")
     except:
-        print("Error While sending Mail !")
+        print(" Error While sending Mail ! ")
