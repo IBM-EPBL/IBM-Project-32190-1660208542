@@ -2,7 +2,7 @@ import sendgrid
 from sendgrid.helpers.mail import *
 
 def mailtest_request(to_email):
-    # sg = sendgrid.SendGridAPIClient(api_key= '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' )
+    # sg = sendgrid.SendGridAPIClient(api_key= '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' )
     from_email = Email("kaushik.selvaraju@gmail.com")
     subject = "Budget Alert !"
     content = Content("text/plain", "Your Expense is out of Budget !")
